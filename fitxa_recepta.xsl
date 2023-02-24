@@ -7,7 +7,7 @@
             </head>
             <body>
                 <div>
-                    <div class="categoria">Recetas de <xsl:value-of select="categoria" /></div>
+                    <div class="categoria"> <xsl:value-of select="categoria" /></div>
                     <div class="circle ">
                         <a class="c2">Ràpida i senzilla</a>
                     </div>
