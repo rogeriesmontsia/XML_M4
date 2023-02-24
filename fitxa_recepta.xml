@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="fitxa_recepta.xsl" ?>
+<!DOCTYPE receptes [
+<!ELEMENT receptes (recepta)>
+<!ELEMENT recepta (nom , categoria , informacio_general , ingredients , preparacio)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT categoria (#PCDATA)>
+<!ELEMENT informacio_general (foto , comensals , temps , dificultat)>
+<!ELEMENT foto (#PCDATA)>
+<!ELEMENT comensals (#PCDATA)>
+<!ELEMENT temps (#PCDATA)>
+<!ATTLIST temps unitat CDATA #REQUIRED>
+<!ELEMENT dificultat (#PCDATA)>
+<!ELEMENT ingredients (ingredient)+>
+<!ELEMENT ingredient (#PCDATA)>
+<!ATTLIST ingredient quantitat CDATA #IMPLIED>
+<!ATTLIST ingredient unitat CDATA #IMPLIED>
+<!ELEMENT preparacio (pas)+>
+<!ELEMENT pas (#PCDATA)>
+<!ATTLIST pas numero CDATA #REQUIRED>
+]>
+<receptes>
+    <recepta>
+        <nom>Canapès amb vedella, figues i Tête de Moine AOP</nom>
+        <categoria>Canapès</categoria>
+        <informacio_general>
+            <foto>https://drive.google.com/uc?export=view&amp;id=1xX5JuYL-QLCp7N0iZGNq4EL1xie-c59A</foto>
+            <comensals>2</comensals>
+            <temps unitat="minuts">15</temps>
+            <dificultat>Ràpida i senzilla</dificultat>
+        </informacio_general>
+        <ingredients>
+            <ingredient quantitat="4" unitat="flors">Tête de Moine AOP</ingredient>
+            <ingredient quantitat="4" unitat="rodanxes">Fines de carn de vedella freda</ingredient>
+            <ingredient quantitat="4" unitat="llesques">De baguet</ingredient>
+            <ingredient quantitat="2" unitat="cullerades">Mel</ingredient>
+            <ingredient quantitat="4">figues tallades per la meitat</ingredient>
+            <ingredient quantitat="1">Taronja tallada a làmines</ingredient>
+            <ingredient quantitat="1">Branqueta de farigola</ingredient>
+            <ingredient>Pebre negre</ingredient>
+            <ingredient>Sal</ingredient>
+        </ingredients>
+        <preparacio>
+            <pas numero="1">Barregue la mel, l'oli i la farigola. Marineu les figues i les taronges
+                amb la salsa durant 5 min, removent-ho en cercles. Assaoneu la salsa amb sal i
+                pebre.</pas>
+            <pas numero="2">Poseu damunt les llesques la carn de vedella freda, prèviament
+                enrotllada i tallada a tires, i cobriu-la amb un làmina de taronja.</pas>
+            <pas numero="3">Ruixeu els canapès amb la resta de la salsa i decoreu-ho amb una flor de
+                Tete de Moine AOP. Afegiu les figus al plat i serviu-ho.</pas>
+        </preparacio>
+    </recepta>
+</receptes>
