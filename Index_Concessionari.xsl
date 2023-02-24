@@ -3,7 +3,7 @@
     <xsl:template match="/concessionari">
         <html>
             <head>
-            <link  href="CSS_Xavi.css" rel="stylesheet" type="text/css"  />
+            <link  href="Estils_Index.css" rel="stylesheet" type="text/css"  />
             </head>
             <body>
                 <div>
@@ -11,7 +11,7 @@
                 </div>
                 
                
-                                <div>
+                                <div class = "mig">
                                 
                                 <div class = "imatge">
                                 <xsl:element name="img">

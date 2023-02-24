@@ -1,0 +1,30 @@
+.mig {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+
+.imatge {
+    
+  height: 500px;
+    
+}
+
+.categoria {
+
+                    width: 300px;
+                    height: 40px;
+
+                    font-size:1.6em;
+                    color:#000000;
+                    font-weight:bold;
+                    padding:0.3em 1em;
+
+                    border-radius: 0px 27px 26px 0px;
+                    -moz-border-radius: 0px 27px 26px 0px;
+                    -webkit-border-radius: 0px 27px 26px 0px;
+
+                    color: #ffffff;
+                    background: #6495FC;
+}
