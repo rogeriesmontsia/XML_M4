@@ -2,6 +2,9 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/receptes/recepta">
         <html>
+            <head>
+            <link href="CSS_Xavi.css" rel="stylesheet" type="text/css">
+            </head>
             <body>
                 <div>
                     <div class="categoria">Recetas de <xsl:value-of select="categoria" /></div>
