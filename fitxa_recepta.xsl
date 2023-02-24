@@ -3,7 +3,7 @@
     <xsl:template match="/receptes/recepta">
         <html>
             <head>
-            <link href="CSS_Xavi.css" rel="stylesheet" type="text/css">
+            <link  href="CSS_Xavi.css" rel="stylesheet" type="text/css"  />
             </head>
             <body>
                 <div>
