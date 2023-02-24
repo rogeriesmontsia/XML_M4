@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Index_Concessionari.xsl" ?>
 <!DOCTYPE concessionari [
         <!ELEMENT concessionari (marques)*>
         <!ATTLIST concessionari
@@ -37,6 +38,8 @@
         <!ELEMENT Volkswagen_Polo (venedor|fabricant|any|descripcio|motor|gama)*>
         ]>
 <concessionari NomConcessionari="Concessionari Andorra">
+<Nom>Andorra</Nom>
+<foto>http://es.centreprestigiautomobils.ad/Content/img/slider/482438566.jpg</foto>
     <marques>
         <Audi Fabricacio="Alemana">
             <modelsAudi>
