@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="concessionari">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="marques"/>
+      </xs:sequence>
+      <xs:attribute name="NomConcessionari" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="marques">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Audi"/>
+        <xs:element ref="Seat"/>
+        <xs:element ref="Volkswagen"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Audi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="modelsAudi"/>
+      </xs:sequence>
+      <xs:attribute name="Fabricacio" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="modelsAudi">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Audi_A1_Sportback"/>
+        <xs:element ref="Audi_S8_TFSI"/>
+        <xs:element ref="Audi_A4"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Audi_A1_Sportback">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="venedor"/>
+        <xs:element ref="any"/>
+        <xs:element ref="descripcio"/>
+        <xs:element ref="motor"/>
+        <xs:element ref="gama"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Audi_S8_TFSI">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="venedor"/>
+        <xs:element ref="any"/>
+        <xs:element ref="descripcio"/>
+        <xs:element ref="motor"/>
+        <xs:element ref="gama"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Audi_A4">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="venedor"/>
+        <xs:element ref="any"/>
+        <xs:element ref="descripcio"/>
+        <xs:element ref="motor"/>
+        <xs:element ref="gama"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Seat">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="modelsSeat"/>
+      </xs:sequence>
+      <xs:attribute name="Fabricacio" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="modelsSeat">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Seat_Leon"/>
+        <xs:element ref="Seat_Ibiza"/>
+        <xs:element ref="Seat_Ateca"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Seat_Leon">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="venedor"/>
+        <xs:element ref="any"/>
+        <xs:element ref="descripcio"/>
+        <xs:element ref="motor"/>
+        <xs:element ref="gama"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Seat_Ibiza">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="venedor"/>
+        <xs:element ref="any"/>
+        <xs:element ref="descripcio"/>
+        <xs:element ref="motor"/>
+        <xs:element ref="gama"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Seat_Ateca">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="venedor"/>
+        <xs:element ref="any"/>
+        <xs:element ref="descripcio"/>
+        <xs:element ref="motor"/>
+        <xs:element ref="gama"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Volkswagen">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="modelsVW"/>
+      </xs:sequence>
+      <xs:attribute name="Fabricacio" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="modelsVW">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Volkswagen_ArteonR"/>
+        <xs:element ref="Volkswagen_Tiguan"/>
+        <xs:element ref="Volkswagen_Polo"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Volkswagen_ArteonR">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="venedor"/>
+        <xs:element ref="fabricant"/>
+        <xs:element ref="any"/>
+        <xs:element ref="descripcio"/>
+        <xs:element ref="motor"/>
+        <xs:element ref="gama"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Volkswagen_Tiguan">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="venedor"/>
+        <xs:element ref="fabricant"/>
+        <xs:element ref="any"/>
+        <xs:element ref="descripcio"/>
+        <xs:element ref="motor"/>
+        <xs:element ref="gama"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Volkswagen_Polo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="venedor"/>
+        <xs:element ref="fabricant"/>
+        <xs:element ref="any"/>
+        <xs:element ref="descripcio"/>
+        <xs:element ref="motor"/>
+        <xs:element ref="gama"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="venedor" type="xs:NCName"/>
+  <xs:element name="any" type="xs:integer"/>
+  <xs:element name="descripcio" type="xs:string"/>
+  <xs:element name="motor" type="xs:string"/>
+  <xs:element name="gama">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="gamaBaixa"/>
+        <xs:element ref="gamaMitja"/>
+        <xs:element ref="gamaAlta"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="gamaBaixa" type="preu"/>
+  <xs:element name="gamaMitja" type="preu"/>
+  <xs:element name="gamaAlta" type="preu"/>
+  <xs:element name="fabricant" type="xs:NCName"/>
+  <xs:complexType name="preu">
+    <xs:sequence>
+      <xs:element ref="preu"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="preu" type="xs:string"/>
+</xs:schema>
