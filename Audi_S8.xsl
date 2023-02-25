@@ -5,12 +5,12 @@
             <head>
             <link  href="Estils_Index.css" rel="stylesheet" type="text/css"  />
             </head>
-            <body>
-                <div>
+            <header>
+            <div class = "boto">
+            
                     <div class="categoria">Concessionari <xsl:value-of select="Nom" /></div>   
                 </div>
-                
-                                <div class = "mig">
+<div class = "mig">
                                 
                                 <div class = "imatge">
                                 <xsl:element name="img">
@@ -18,7 +18,10 @@
                                     <xsl:value-of select="foto" />
                                 </xsl:attribute>
                                 <xsl:attribute name="height">
-                                    <xsl:value-of select="390" />
+                                    <xsl:value-of select="180" /> 
+                                </xsl:attribute>
+                                <xsl:attribute name="width">
+                                    <xsl:value-of select="1300" /> 
                                 </xsl:attribute>
                             </xsl:element>
                                 
@@ -26,23 +29,44 @@
 
                                 </div>
                                 
+            </header>
+            <body>
+                
+                
+                                
                                 <div>
                                 <div class = "titol"><b>Model </b>
                                 <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/model" /></div>
                                 
                                 </div>
+    <div class = "centrat">
 
+                                <div class = "imatgecotxe">
+                                <xsl:element name="img">
+                                <xsl:attribute name="src">
+                                    <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/fotoA1" />
+                                </xsl:attribute>
+                                <xsl:attribute name="height">
+                                    <xsl:value-of select="500" /> 
+                                </xsl:attribute>
+                                <xsl:attribute name="width">
+                                    <xsl:value-of select="1300" /> 
+                                </xsl:attribute>
+                            </xsl:element>
+                                
+                                </div>
+</div>
                                 <table>
-                                <div><b>Venedor </b>
-                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/venedor" /></div>
-                                <div><b>Any </b>    
-                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/any" /></div>
-                                <div><b>Descripció </b>
-                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/descripcio" /></div>
-                                <div><b>Potència </b>
-                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/motor" /></div>
-                                <div><b>Preu </b>
-                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/gama/gamaBaixa/preu" /></div>
+                                <b>Venedor </b>
+                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/venedor" />
+                                <b>Any </b>    
+                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/any" />
+                                <b>Descripció </b>
+                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/descripcio" />
+                                <b>Potència </b>
+                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/motor" />
+                                <b>Preu </b>
+                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/gama/gamaBaixa/preu" />
 
                                 <xsl:for-each select="marques/Audi/modelsAudi/Audi_A1_Sportback/preus">
                                     <xsl:value-of select="@gama" /><xsl:value-of

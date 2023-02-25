@@ -44,6 +44,7 @@
         <Audi Fabricacio="Alemana">
             <modelsAudi>
                 <Audi_A1_Sportback>
+                <fotoA1>http://www.listadecarros.com/wp-content/uploads/2014/05/Audi-A1-Sportback-2014-7.jpg</fotoA1>
                 <model>Audi A1 Sportback</model>
                     <venedor>Richard</venedor>
                     <any>2023</any>

@@ -1,13 +1,18 @@
-.mig {
+body {
+  background-color: rgb(219, 219, 219);
+}
+
+.mig,
+.centrat,
+.boto {
     display: flex;
   justify-content: center;
   align-items: center;
-  height: 700px;
 }
 
-.imatge {
-    
-  height: 500px;
+.imatgecotxe {
+    border-radius: 50px;
+  
     
 }
 
