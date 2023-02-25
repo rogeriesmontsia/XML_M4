@@ -28,7 +28,7 @@
 
                                 </div>
                                 
-                                <div class="venedor">Venedor <xsl:value-of select="modelsAudi/venedor" /></div>
+                                <div>Venedor <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/venedor" /></div>
 
             </body>
         </html>
