@@ -10,7 +10,6 @@
                     <div class="categoria">Concessionari <xsl:value-of select="Nom" /></div>   
                 </div>
                 
-               
                                 <div class = "mig">
                                 
                                 <div class = "imatge">
@@ -27,6 +26,12 @@
 
                                 </div>
                                 
+                                <div>
+                                <div class = "titol"><b>Model </b>
+                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/model" /></div>
+                                
+                                </div>
+
                                 <table>
                                 <div><b>Venedor </b>
                                 <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/venedor" /></div>

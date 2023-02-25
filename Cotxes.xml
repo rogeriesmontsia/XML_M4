@@ -44,6 +44,7 @@
         <Audi Fabricacio="Alemana">
             <modelsAudi>
                 <Audi_A1_Sportback>
+                <model>Audi A1 Sportback</model>
                     <venedor>Richard</venedor>
                     <any>2023</any>
                     <descripcio>Sent el dinamisme i l'esportivitat de l'Audi A1 Sportback.
