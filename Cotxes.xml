@@ -49,17 +49,16 @@
                     <descripcio>Sent el dinamisme i l'esportivitat de l'Audi A1 Sportback.
                         Un urbanita 100% connectat, amb tota la tecnologia, disseny i diversió que cerques.</descripcio>
                     <motor>207 CV</motor>
-                    <gama>
-                        <gamaBaixa>
-                            <preu>29.501,00 €</preu>
-                        </gamaBaixa>
-                        <gamaMitja>
-                            <preu>34.209,00 €</preu>
-                        </gamaMitja>
-                        <gamaAlta>
-                            <preu>47.605,00 €</preu>
-                        </gamaAlta>
-                    </gama>
+                    <preus>
+                        
+                            <preu gama ="gamaBaixa">29.501,00 €</preu>
+                        
+                        
+                            <preu gama = "gamaMitja">34.209,00 €</preu>
+                        
+                            <preu gama = "gamaAlta">47.605,00 €</preu>
+                        
+                    </preus>
                 </Audi_A1_Sportback>
                 <Audi_S8_TFSI>
                     <venedor>Richard</venedor>

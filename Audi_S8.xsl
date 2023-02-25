@@ -18,8 +18,7 @@
                                 <xsl:attribute name="src">
                                     <xsl:value-of select="foto" />
                                 </xsl:attribute>
-   <xsl:attribute
-                                    name="height">
+                                <xsl:attribute name="height">
                                     <xsl:value-of select="390" />
                                 </xsl:attribute>
                             </xsl:element>
@@ -28,7 +27,24 @@
 
                                 </div>
                                 
-                                <div>Venedor <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/venedor" /></div>
+                                <table>
+                                <div><b>Venedor </b>
+                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/venedor" /></div>
+                                <div><b>Any </b>    
+                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/any" /></div>
+                                <div><b>Descripció </b>
+                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/descripcio" /></div>
+                                <div><b>Potència </b>
+                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/motor" /></div>
+                                <div><b>Preu </b>
+                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/gama/gamaBaixa/preu" /></div>
+
+                                <xsl:for-each select="marques/Audi/modelsAudi/Audi_A1_Sportback/preus">
+                                    <xsl:value-of select="@gama" /><xsl:value-of
+                                        select="concat(' ',.)" /> <br />
+                                </xsl:for-each>
+
+                                </table>
 
             </body>
         </html>
