@@ -57,22 +57,33 @@
                                 </div>
 </div>
                                 <table>
+                                <td class="info">
                                 <b>Venedor </b>
                                 <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/venedor" />
+                                <br />
                                 <b>Any </b>    
                                 <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/any" />
+                                <br />
                                 <b>Descripció </b>
                                 <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/descripcio" />
+                                <br />
                                 <b>Potència </b>
                                 <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/motor" />
-                                <b>Preu </b>
-                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/gama/gamaBaixa/preu" />
-
-                                <xsl:for-each select="marques/Audi/modelsAudi/Audi_A1_Sportback/preus">
-                                    <xsl:value-of select="@gama" /><xsl:value-of
-                                        select="concat(' ',.)" /> <br />
-                                </xsl:for-each>
-
+                                <br />
+                                <b>Preus </b>
+                                <div>
+                                Gama Baixa
+                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/gama/gamaBaixa" />
+                                </div>
+                                <div>
+                                Gama Mitja
+                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/gama/gamaMitja" />
+                                </div>
+                                <div>
+                                Gama Alta
+                                <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/gama/gamaAlta" /> 
+                                </div>       
+                                </td>
                                 </table>
 
             </body>
