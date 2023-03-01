@@ -44,7 +44,7 @@
                                 <div class = "imatgecotxe">
                                 <xsl:element name="img">
                                 <xsl:attribute name="src">
-                                    <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/fotoA1" />
+                                    <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/foto" />
                                 </xsl:attribute>
                                 <xsl:attribute name="height">
                                     <xsl:value-of select="500" /> 

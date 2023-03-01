@@ -3,11 +3,14 @@
   <xs:element name="concessionari">
     <xs:complexType>
       <xs:sequence>
+        <xs:element ref="Nom"/>
+        <xs:element ref="foto"/>
         <xs:element ref="marques"/>
       </xs:sequence>
       <xs:attribute name="NomConcessionari" use="required"/>
     </xs:complexType>
   </xs:element>
+  <xs:element name="Nom" type="xs:NCName"/>
   <xs:element name="marques">
     <xs:complexType>
       <xs:sequence>
@@ -37,6 +40,8 @@
   <xs:element name="Audi_A1_Sportback">
     <xs:complexType>
       <xs:sequence>
+        <xs:element ref="model"/>
+        <xs:element ref="foto"/>
         <xs:element ref="venedor"/>
         <xs:element ref="any"/>
         <xs:element ref="descripcio"/>
@@ -48,6 +53,8 @@
   <xs:element name="Audi_S8_TFSI">
     <xs:complexType>
       <xs:sequence>
+        <xs:element ref="model"/>
+        <xs:element ref="foto"/>
         <xs:element ref="venedor"/>
         <xs:element ref="any"/>
         <xs:element ref="descripcio"/>
@@ -59,6 +66,8 @@
   <xs:element name="Audi_A4">
     <xs:complexType>
       <xs:sequence>
+        <xs:element ref="model"/>
+        <xs:element ref="foto"/>
         <xs:element ref="venedor"/>
         <xs:element ref="any"/>
         <xs:element ref="descripcio"/>
@@ -87,6 +96,8 @@
   <xs:element name="Seat_Leon">
     <xs:complexType>
       <xs:sequence>
+        <xs:element ref="model"/>
+        <xs:element ref="foto"/>
         <xs:element ref="venedor"/>
         <xs:element ref="any"/>
         <xs:element ref="descripcio"/>
@@ -98,6 +109,8 @@
   <xs:element name="Seat_Ibiza">
     <xs:complexType>
       <xs:sequence>
+        <xs:element ref="model"/>
+        <xs:element ref="foto"/>
         <xs:element ref="venedor"/>
         <xs:element ref="any"/>
         <xs:element ref="descripcio"/>
@@ -109,6 +122,8 @@
   <xs:element name="Seat_Ateca">
     <xs:complexType>
       <xs:sequence>
+        <xs:element ref="model"/>
+        <xs:element ref="foto"/>
         <xs:element ref="venedor"/>
         <xs:element ref="any"/>
         <xs:element ref="descripcio"/>
@@ -137,6 +152,8 @@
   <xs:element name="Volkswagen_ArteonR">
     <xs:complexType>
       <xs:sequence>
+        <xs:element ref="model"/>
+        <xs:element ref="foto"/>
         <xs:element ref="venedor"/>
         <xs:element ref="fabricant"/>
         <xs:element ref="any"/>
@@ -149,6 +166,8 @@
   <xs:element name="Volkswagen_Tiguan">
     <xs:complexType>
       <xs:sequence>
+        <xs:element ref="model"/>
+        <xs:element ref="foto"/>
         <xs:element ref="venedor"/>
         <xs:element ref="fabricant"/>
         <xs:element ref="any"/>
@@ -161,6 +180,8 @@
   <xs:element name="Volkswagen_Polo">
     <xs:complexType>
       <xs:sequence>
+        <xs:element ref="model"/>
+        <xs:element ref="foto"/>
         <xs:element ref="venedor"/>
         <xs:element ref="fabricant"/>
         <xs:element ref="any"/>
@@ -170,6 +191,8 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="foto" type="xs:anyURI"/>
+  <xs:element name="model" type="xs:string"/>
   <xs:element name="venedor" type="xs:NCName"/>
   <xs:element name="any" type="xs:integer"/>
   <xs:element name="descripcio" type="xs:string"/>
@@ -183,14 +206,8 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="gamaBaixa" type="preu"/>
-  <xs:element name="gamaMitja" type="preu"/>
-  <xs:element name="gamaAlta" type="preu"/>
+  <xs:element name="gamaBaixa" type="xs:string"/>
+  <xs:element name="gamaMitja" type="xs:string"/>
+  <xs:element name="gamaAlta" type="xs:string"/>
   <xs:element name="fabricant" type="xs:NCName"/>
-  <xs:complexType name="preu">
-    <xs:sequence>
-      <xs:element ref="preu"/>
-    </xs:sequence>
-  </xs:complexType>
-  <xs:element name="preu" type="xs:string"/>
 </xs:schema>

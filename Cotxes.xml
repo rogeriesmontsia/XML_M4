@@ -1,68 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="Audi_S8.xsl" ?>
 <!DOCTYPE concessionari [
-        <!ELEMENT concessionari (marques)*>
+        <!ELEMENT concessionari (Nom|foto|marques)*>
         <!ATTLIST concessionari
                 NomConcessionari CDATA #REQUIRED>
+        <!ELEMENT Nom (#PCDATA)>
+        <!ELEMENT foto (#PCDATA)>
         <!ELEMENT marques (Audi|Seat|Volkswagen)*>
         <!ELEMENT Audi (modelsAudi)*>
         <!ATTLIST Audi
                 Fabricacio CDATA #REQUIRED>
         <!ELEMENT modelsAudi (Audi_A1_Sportback|Audi_S8_TFSI|Audi_A4)*>
-        <!ELEMENT Audi_A1_Sportback (venedor|any|descripcio|motor|gama)*>
+        <!ELEMENT Audi_A1_Sportback (model|foto|venedor|any|descripcio|motor|gama)*>
+        <!ELEMENT model (#PCDATA)>
         <!ELEMENT venedor (#PCDATA)>
         <!ELEMENT any (#PCDATA)>
         <!ELEMENT descripcio (#PCDATA)>
         <!ELEMENT motor (#PCDATA)>
         <!ELEMENT gama (gamaBaixa|gamaMitja|gamaAlta)*>
-        <!ELEMENT gamaBaixa (preu)*>
-        <!ELEMENT preu (#PCDATA)>
-        <!ELEMENT gamaMitja (preu)*>
-        <!ELEMENT gamaAlta (preu)*>
-        <!ELEMENT Audi_S8_TFSI (venedor|any|descripcio|motor|gama)*>
-        <!ELEMENT Audi_A4 (venedor|any|descripcio|motor|gama)*>
+        <!ELEMENT gamaBaixa (#PCDATA)>
+        <!ELEMENT gamaMitja (#PCDATA)>
+        <!ELEMENT gamaAlta (#PCDATA)>
+        <!ELEMENT Audi_S8_TFSI (model|foto|venedor|any|descripcio|motor|gama)*>
+        <!ELEMENT Audi_A4 (model|foto|venedor|any|descripcio|motor|gama)*>
         <!ELEMENT Seat (modelsSeat)*>
         <!ATTLIST Seat
                 Fabricacio CDATA #REQUIRED>
         <!ELEMENT modelsSeat (Seat_Leon|Seat_Ibiza|Seat_Ateca)*>
-        <!ELEMENT Seat_Leon (venedor|any|descripcio|motor|gama)*>
-        <!ELEMENT Seat_Ibiza (venedor|any|descripcio|motor|gama)*>
-        <!ELEMENT Seat_Ateca (venedor|any|descripcio|motor|gama)*>
+        <!ELEMENT Seat_Leon (model|foto|venedor|any|descripcio|motor|gama)*>
+        <!ELEMENT Seat_Ibiza (model|foto|venedor|any|descripcio|motor|gama)*>
+        <!ELEMENT Seat_Ateca (model|foto|venedor|any|descripcio|motor|gama)*>
         <!ELEMENT Volkswagen (modelsVW)*>
         <!ATTLIST Volkswagen
                 Fabricacio CDATA #REQUIRED>
         <!ELEMENT modelsVW (Volkswagen_ArteonR|Volkswagen_Tiguan|Volkswagen_Polo)*>
-        <!ELEMENT Volkswagen_ArteonR (venedor|fabricant|any|descripcio|motor|gama)*>
+        <!ELEMENT Volkswagen_ArteonR (model|foto|venedor|fabricant|any|descripcio|motor|gama)*>
         <!ELEMENT fabricant (#PCDATA)>
-        <!ELEMENT Volkswagen_Tiguan (venedor|fabricant|any|descripcio|motor|gama)*>
-        <!ELEMENT Volkswagen_Polo (venedor|fabricant|any|descripcio|motor|gama)*>
+        <!ELEMENT Volkswagen_Tiguan (model|foto|venedor|fabricant|any|descripcio|motor|gama)*>
+        <!ELEMENT Volkswagen_Polo (model|foto|venedor|fabricant|any|descripcio|motor|gama)*>
         ]>
 <concessionari NomConcessionari="Concessionari Andorra">
-<Nom>Andorra</Nom>
-<foto>http://es.centreprestigiautomobils.ad/Content/img/slider/482438566.jpg</foto>
+    <Nom>Andorra</Nom>
+    <foto>http://es.centreprestigiautomobils.ad/Content/img/slider/482438566.jpg</foto>
     <marques>
         <Audi Fabricacio="Alemana">
             <modelsAudi>
                 <Audi_A1_Sportback>
-                <fotoA1>http://www.listadecarros.com/wp-content/uploads/2014/05/Audi-A1-Sportback-2014-7.jpg</fotoA1>
-                <model>Audi A1 Sportback</model>
+                    <model>Audi A1 Sportback</model>
+                    <foto>http://www.listadecarros.com/wp-content/uploads/2014/05/Audi-A1-Sportback-2014-7.jpg</foto>
                     <venedor>Richard</venedor>
                     <any>2023</any>
                     <descripcio>Sent el dinamisme i l'esportivitat de l'Audi A1 Sportback.
                         Un urbanita 100% connectat, amb tota la tecnologia, disseny i diversió que cerques.</descripcio>
                     <motor>207 CV</motor>
                     <gama>
-                        
-                            <gamaBaixa>29.501,00 €</gamaBaixa>
-                        
-                        
-                            <gamaMitja>34.209,00 €</gamaMitja>
-                        
-                            <gamaAlta>47.605,00 €</gamaAlta>
-                        
+                        <gamaBaixa>29.501,00 €</gamaBaixa>
+                        <gamaMitja>34.209,00 €</gamaMitja>
+                        <gamaAlta>47.605,00 €</gamaAlta>
                     </gama>
                 </Audi_A1_Sportback>
                 <Audi_S8_TFSI>
+                    <model>Audi S8</model>
+                    <foto>https://cdn.motor1.com/images/mgl/28MWB/s3/2022-audi-s8.jpg</foto>
                     <venedor>Richard</venedor>
                     <any>2023</any>
                     <descripcio>Amb un disseny imponent i unes prestacions esportives de competició,
@@ -70,18 +69,14 @@
                         Turisme únic.</descripcio>
                     <motor>630 CV</motor>
                     <gama>
-                        <gamaBaixa>
-                            <preu>192.101,00 €</preu>
-                        </gamaBaixa>
-                        <gamaMitja>
-                            <preu>214.321,00 €</preu>
-                        </gamaMitja>
-                        <gamaAlta>
-                            <preu>227.840,00 €</preu>
-                        </gamaAlta>
+                        <gamaBaixa>192.101,00 €</gamaBaixa>
+                        <gamaMitja>214.321,00 €</gamaMitja>
+                        <gamaAlta>227.840,00 €</gamaAlta>
                     </gama>
                 </Audi_S8_TFSI>
                 <Audi_A4>
+                    <model>Audi A4</model>
+                    <foto>https://1.bp.blogspot.com/-efRFbk6TXUA/YCsFLJBSVkI/AAAAAAAAqnw/tXOLzqXo0NQEl_7hou-tKhi-I0m1IJAdgCLcBGAsYHQ/s2048/Novo-Audi-A4-2022-Brasil%2B%252846%2529.jpg</foto>
                     <venedor>Richard</venedor>
                     <any>2023</any>
                     <descripcio>Benvingut a un SUV de luxe ampli i versàtil.
@@ -89,15 +84,9 @@
                         la conducció més avançades.</descripcio>
                     <motor>507 CV</motor>
                     <gama>
-                        <gamaBaixa>
-                            <preu>84.525,00 €</preu>
-                        </gamaBaixa>
-                        <gamaMitja>
-                            <preu>101.235,00 €</preu>
-                        </gamaMitja>
-                        <gamaAlta>
-                            <preu>156.925,00 €</preu>
-                        </gamaAlta>
+                        <gamaBaixa>84.525,00 €</gamaBaixa>
+                        <gamaMitja>101.235,00 €</gamaMitja>
+                        <gamaAlta>156.925,00 €</gamaAlta>
                     </gama>
                 </Audi_A4>
             </modelsAudi>
@@ -105,6 +94,8 @@
         <Seat Fabricacio="Espanyola">
             <modelsSeat>
                 <Seat_Leon>
+                    <model>Seat Leon</model>
+                    <foto>https://www.gtopcars.com/wp-content/uploads/2021/07/2022-SEAT-Leon-Cupra-e-Hybrid.jpg</foto>
                     <venedor>Roger</venedor>
                     <any>2022</any>
                     <descripcio>El SEAT León és més atrevit, més ampli i té una llum posterior infinita LED. Hem gaudit
@@ -112,18 +103,14 @@
                         Metal·litzat Suau Gris Graphene SEAT CONNECT Tot es pot aconseguir.</descripcio>
                     <motor>165 CV</motor>
                     <gama>
-                        <gamaBaixa>
-                            <preu>26.000 €</preu>
-                        </gamaBaixa>
-                        <gamaMitja>
-                            <preu>32.500 €</preu>
-                        </gamaMitja>
-                        <gamaAlta>
-                            <preu>46.500 €</preu>
-                        </gamaAlta>
+                        <gamaBaixa>26.000 €</gamaBaixa>
+                        <gamaMitja>32.500 €</gamaMitja>
+                        <gamaAlta>46.500 €</gamaAlta>
                     </gama>
                 </Seat_Leon>
                 <Seat_Ibiza>
+                    <model>Seat Ibiza</model>
+                    <foto>https://i.blogs.es/b55597/seat-ibiza-2022_/1366_2000.jpeg</foto>
                     <venedor>Roger</venedor>
                     <any>2022</any>
                     <descripcio>El nou SEAT Ibiza no és un cotxe per anar a mitges. Amb línies més dinàmiques, noves
@@ -131,18 +118,14 @@
                         Disseny N'hi ha més. El teu Nou SEAT Ibiza i tu teniu més coses en comú.</descripcio>
                     <motor>116 CV</motor>
                     <gama>
-                        <gamaBaixa>
-                            <preu>12.000 €</preu>
-                        </gamaBaixa>
-                        <gamaMitja>
-                            <preu>18.000 €</preu>
-                        </gamaMitja>
-                        <gamaAlta>
-                            <preu>25.000 €</preu>
-                        </gamaAlta>
+                        <gamaBaixa>12.000 €</gamaBaixa>
+                        <gamaMitja>18.000 €</gamaMitja>
+                        <gamaAlta>25.000 €</gamaAlta>
                     </gama>
                 </Seat_Ibiza>
                 <Seat_Ateca>
+                    <model>Seat Ateca</model>
+                    <foto>https://www.lifequestalliance.com/wp-content/uploads/2021/05/2022-Seat-Ateca-suzuki-1.5-tsi-akrapovic-4drive-2-exterior.jpg</foto>
                     <venedor>Roger</venedor>
                     <any>2022</any>
                     <descripcio>El Nou SEAT Ateca s'adapta a la teva necessitat de viure més experiències i recórrer
@@ -151,15 +134,9 @@
                         uns retocs. Nova graella davantera.</descripcio>
                     <motor>90 CV</motor>
                     <gama>
-                        <gamaBaixa>
-                            <preu>20.000 €</preu>
-                        </gamaBaixa>
-                        <gamaMitja>
-                            <preu>26.500 €</preu>
-                        </gamaMitja>
-                        <gamaAlta>
-                            <preu>34.900 €</preu>
-                        </gamaAlta>
+                        <gamaBaixa>20.000 €</gamaBaixa>
+                        <gamaMitja>26.500 €</gamaMitja>
+                        <gamaAlta>34.900 €</gamaAlta>
                     </gama>
                 </Seat_Ateca>
             </modelsSeat>
@@ -167,6 +144,8 @@
         <Volkswagen Fabricacio="Alemana">
             <modelsVW>
                 <Volkswagen_ArteonR>
+                    <model>Volkswagen Arteon R</model>
+                    <foto>https://i.ytimg.com/vi/RgVYhgtXNgw/maxresdefault.jpg</foto>
                     <venedor>Joan</venedor>
                     <fabricant>Volskwagen</fabricant>
                     <any>2018</any>
@@ -177,18 +156,14 @@
                         Què esperes per viure-la?</descripcio>
                     <motor>Arteon R 2.0 TSI 235 kW (320 CV)</motor>
                     <gama>
-                        <gamaBaixa>
-                            <preu>52680 €</preu>
-                        </gamaBaixa>
-                        <gamaMitja>
-                            <preu>60320 €</preu>
-                        </gamaMitja>
-                        <gamaAlta>
-                            <preu>72600 €</preu>
-                        </gamaAlta>
+                        <gamaBaixa>52680 €</gamaBaixa>
+                        <gamaMitja>60320 €</gamaMitja>
+                        <gamaAlta>72600 €</gamaAlta>
                     </gama>
                 </Volkswagen_ArteonR>
                 <Volkswagen_Tiguan>
+                    <model>Volkswagen Tiguan</model>
+                    <foto>https://cdn.motor1.com/images/mgl/PpZ0X/s1/2022-volkswagen-tiguan-eu.jpg</foto>
                     <venedor>Joan</venedor>
                     <fabricant>Volskwagen</fabricant>
                     <any>2016</any>
@@ -199,18 +174,14 @@
                         com tu.</descripcio>
                     <motor>Tiguan 2.0 TSI R 4Motion DSG 235kW (320CV)</motor>
                     <gama>
-                        <gamaBaixa>
-                            <preu>34990 €</preu>
-                        </gamaBaixa>
-                        <gamaMitja>
-                            <preu>44085 €</preu>
-                        </gamaMitja>
-                        <gamaAlta>
-                            <preu>67301 €</preu>
-                        </gamaAlta>
+                        <gamaBaixa>34990 €</gamaBaixa>
+                        <gamaMitja>44085 €</gamaMitja>
+                        <gamaAlta>67301 €</gamaAlta>
                     </gama>
                 </Volkswagen_Tiguan>
                 <Volkswagen_Polo>
+                    <model>Volkswagen Polo</model>
+                    <foto>https://i.ytimg.com/vi/rXT1VzQvMog/maxresdefault.jpg</foto>
                     <venedor>Joan</venedor>
                     <fabricant>Volskwagen</fabricant>
                     <any>2017</any>
@@ -219,15 +190,9 @@
                         que vols al teu dia a dia. Us fareu inseparables.</descripcio>
                     <motor>Polo 2.0 TSI GTI DSG 81kW (207CV)</motor>
                     <gama>
-                        <gamaBaixa>
-                            <preu>18844 €</preu>
-                        </gamaBaixa>
-                        <gamaMitja>
-                            <preu>22654 €</preu>
-                        </gamaMitja>
-                        <gamaAlta>
-                            <preu>30003 €</preu>
-                        </gamaAlta>
+                        <gamaBaixa>18844 €</gamaBaixa>
+                        <gamaMitja>22654 €</gamaMitja>
+                        <gamaAlta>30003 €</gamaAlta>
                     </gama>
                 </Volkswagen_Polo>
             </modelsVW>
