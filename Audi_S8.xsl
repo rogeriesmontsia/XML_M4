@@ -47,10 +47,10 @@
                                     <xsl:value-of select="marques/Audi/modelsAudi/Audi_A1_Sportback/foto" />
                                 </xsl:attribute>
                                 <xsl:attribute name="height">
-                                    <xsl:value-of select="500" /> 
+                                    <xsl:value-of select="250" /> 
                                 </xsl:attribute>
                                 <xsl:attribute name="width">
-                                    <xsl:value-of select="1300" /> 
+                                    <xsl:value-of select="500" /> 
                                 </xsl:attribute>
                             </xsl:element>
                                 
