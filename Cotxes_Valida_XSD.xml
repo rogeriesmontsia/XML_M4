@@ -1,45 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="Audi_A1.xsl" ?>
-<!DOCTYPE concessionari [
-        <!ELEMENT concessionari (Nom|foto|marques)*>
-        <!ATTLIST concessionari
-                NomConcessionari CDATA #REQUIRED>
-        <!ELEMENT Nom (#PCDATA)>
-        <!ELEMENT foto (#PCDATA)>
-        <!ELEMENT marques (Audi|Seat|Volkswagen)*>
-        <!ELEMENT Audi (modelsAudi)*>
-        <!ATTLIST Audi
-                Fabricacio CDATA #REQUIRED>
-        <!ELEMENT modelsAudi (Audi_A1_Sportback|Audi_S8_TFSI|Audi_A4)*>
-        <!ELEMENT Audi_A1_Sportback (model|foto|venedor|any|descripcio|motor|gama)*>
-        <!ELEMENT model (#PCDATA)>
-        <!ELEMENT venedor (#PCDATA)>
-        <!ELEMENT any (#PCDATA)>
-        <!ELEMENT descripcio (#PCDATA)>
-        <!ELEMENT motor (#PCDATA)>
-        <!ELEMENT gama (gamaBaixa|gamaMitja|gamaAlta)*>
-        <!ELEMENT gamaBaixa (#PCDATA)>
-        <!ELEMENT gamaMitja (#PCDATA)>
-        <!ELEMENT gamaAlta (#PCDATA)>
-        <!ELEMENT Audi_S8_TFSI (model|foto|venedor|any|descripcio|motor|gama)*>
-        <!ELEMENT Audi_A4 (model|foto|venedor|any|descripcio|motor|gama)*>
-        <!ELEMENT Seat (modelsSeat)*>
-        <!ATTLIST Seat
-                Fabricacio CDATA #REQUIRED>
-        <!ELEMENT modelsSeat (Seat_Leon|Seat_Ibiza|Seat_Ateca)*>
-        <!ELEMENT Seat_Leon (model|foto|venedor|any|descripcio|motor|gama)*>
-        <!ELEMENT Seat_Ibiza (model|foto|venedor|any|descripcio|motor|gama)*>
-        <!ELEMENT Seat_Ateca (model|foto|venedor|any|descripcio|motor|gama)*>
-        <!ELEMENT Volkswagen (modelsVW)*>
-        <!ATTLIST Volkswagen
-                Fabricacio CDATA #REQUIRED>
-        <!ELEMENT modelsVW (Volkswagen_ArteonR|Volkswagen_Tiguan|Volkswagen_Polo)*>
-        <!ELEMENT Volkswagen_ArteonR (model|foto|venedor|fabricant|any|descripcio|motor|gama)*>
-        <!ELEMENT fabricant (#PCDATA)>
-        <!ELEMENT Volkswagen_Tiguan (model|foto|venedor|fabricant|any|descripcio|motor|gama)*>
-        <!ELEMENT Volkswagen_Polo (model|foto|venedor|fabricant|any|descripcio|motor|gama)*>
-        ]>
-<concessionari NomConcessionari="Concessionari Andorra">
+<concessionari NomConcessionari="Concessionari Andorra" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="Cotxes.xsd">
     <Nom>Andorra</Nom>
     <foto>http://es.centreprestigiautomobils.ad/Content/img/slider/482438566.jpg</foto>
     <marques>
