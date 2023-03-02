@@ -1,0 +1,126 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT concessionari (Nom,foto,marques)>
+<!ATTLIST concessionari
+  xmlns CDATA #FIXED ''
+  NomConcessionari CDATA #REQUIRED>
+
+<!ELEMENT Nom (#PCDATA)>
+<!ATTLIST Nom
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT marques (Audi,Seat,Volkswagen)>
+<!ATTLIST marques
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Audi (modelsAudi)>
+<!ATTLIST Audi
+  xmlns CDATA #FIXED ''
+  Fabricacio NMTOKEN #REQUIRED>
+
+<!ELEMENT Seat (modelsSeat)>
+<!ATTLIST Seat
+  xmlns CDATA #FIXED ''
+  Fabricacio NMTOKEN #REQUIRED>
+
+<!ELEMENT Volkswagen (modelsVW)>
+<!ATTLIST Volkswagen
+  xmlns CDATA #FIXED ''
+  Fabricacio NMTOKEN #REQUIRED>
+
+<!ELEMENT modelsAudi (Audi_A1_Sportback,Audi_S8_TFSI,Audi_A4)>
+<!ATTLIST modelsAudi
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT modelsSeat (Seat_Leon,Seat_Ibiza,Seat_Ateca)>
+<!ATTLIST modelsSeat
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT modelsVW (Volkswagen_ArteonR,Volkswagen_Tiguan,
+                    Volkswagen_Polo)>
+<!ATTLIST modelsVW
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Audi_A1_Sportback (model,foto,venedor,any,descripcio,motor,
+                             gama)>
+<!ATTLIST Audi_A1_Sportback
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Audi_S8_TFSI (model,foto,venedor,any,descripcio,motor,gama)>
+<!ATTLIST Audi_S8_TFSI
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Audi_A4 (model,foto,venedor,any,descripcio,motor,gama)>
+<!ATTLIST Audi_A4
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Seat_Leon (model,foto,venedor,any,descripcio,motor,gama)>
+<!ATTLIST Seat_Leon
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Seat_Ibiza (model,foto,venedor,any,descripcio,motor,gama)>
+<!ATTLIST Seat_Ibiza
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Seat_Ateca (model,foto,venedor,any,descripcio,motor,gama)>
+<!ATTLIST Seat_Ateca
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Volkswagen_ArteonR (model,foto,venedor,fabricant,any,
+                              descripcio,motor,gama)>
+<!ATTLIST Volkswagen_ArteonR
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Volkswagen_Tiguan (model,foto,venedor,fabricant,any,
+                             descripcio,motor,gama)>
+<!ATTLIST Volkswagen_Tiguan
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT Volkswagen_Polo (model,foto,venedor,fabricant,any,descripcio,
+                           motor,gama)>
+<!ATTLIST Volkswagen_Polo
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT foto (#PCDATA)>
+<!ATTLIST foto
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT model (#PCDATA)>
+<!ATTLIST model
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT venedor (#PCDATA)>
+<!ATTLIST venedor
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT any (#PCDATA)>
+<!ATTLIST any
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT descripcio (#PCDATA)>
+<!ATTLIST descripcio
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT motor (#PCDATA)>
+<!ATTLIST motor
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT gama (gamaBaixa,gamaMitja,gamaAlta)>
+<!ATTLIST gama
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT gamaBaixa (#PCDATA)>
+<!ATTLIST gamaBaixa
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT gamaMitja (#PCDATA)>
+<!ATTLIST gamaMitja
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT gamaAlta (#PCDATA)>
+<!ATTLIST gamaAlta
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT fabricant (#PCDATA)>
+<!ATTLIST fabricant
+  xmlns CDATA #FIXED ''>
